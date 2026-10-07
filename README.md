@@ -78,7 +78,7 @@ The `Customers` table contains customer identification, personal information, em
 | `Email` | VARCHAR(100) | Customer email |
 | `RegistrationDate` | DATE | Customer registration date |
 
-The project defines `CustomerID` as the primary key. fileciteturn1file0L6-L11
+The project defines `CustomerID` as the primary key. 
 
 ---
 
@@ -95,7 +95,7 @@ The `Orders` table stores order information and connects each order to a custome
 | `OrderDate` | DATE | Date of order |
 | `TotalAmount` | DECIMAL(10,2) | Total order amount |
 
-The project establishes the relationship between `Orders.CustomerID` and `Customers.CustomerID` using a foreign key. fileciteturn1file0L36-L41
+The project establishes the relationship between `Orders.CustomerID` and `Customers.CustomerID` using a foreign key. 
 
 ---
 
@@ -157,12 +157,11 @@ SELECT AVG(TotalAmount)
 FROM Orders;
 ```
 
-The project then returns orders whose amount is greater than this average. fileciteturn1file0L209-L228
+The project then returns orders whose amount is greater than this average. 
 
 ### Employees Above Average Salary
 
-Employee salaries are compared with the average employee salary to identify employees earning above average. fileciteturn1file0L231-L249
-
+Employee salaries are compared with the average employee salary to identify employees earning above average. 
 ---
 
 ## 📅 Date Functions
@@ -194,7 +193,7 @@ Formats an order date into a readable format such as:
 01-May-2024
 ```
 
-These operations are demonstrated in the SQL project. fileciteturn1file0L253-L308
+These operations are demonstrated in the SQL project. 
 
 ---
 
@@ -235,7 +234,7 @@ Removes unnecessary spaces from email values.
 TRIM(Email)
 ```
 
-The project includes all of these string transformations. fileciteturn1file0L311-L379
+The project includes all of these string transformations.
 
 ---
 
@@ -253,7 +252,7 @@ SUM(TotalAmount) OVER (
 )
 ```
 
-This produces a running total as orders progress by date. fileciteturn1file0L382-L401
+This produces a running total as orders progress by date. 
 
 ### Order Ranking
 
@@ -265,7 +264,7 @@ RANK() OVER (
 )
 ```
 
-The highest-value order receives rank 1. fileciteturn1file0L404-L423
+The highest-value order receives rank 1. 
 
 ---
 
@@ -281,7 +280,7 @@ Orders are categorized into:
 - `5% Discount`
 - `No Discount`
 
-based on their total amount. fileciteturn1file0L426-L447
+based on their total amount. 
 
 ### Employee Salary Category
 
@@ -291,7 +290,7 @@ Employee salaries are categorized as:
 - **Medium**
 - **Low**
 
-using salary-based conditions. fileciteturn1file0L448-L470
+using salary-based conditions. 
 
 ---
 
@@ -409,7 +408,7 @@ This project is designed as a practical SQL learning and demonstration project. 
 
 **Stored → Connected → Filtered → Analyzed → Transformed → Ranked → Categorized**
 
-The SQL file contains working examples and their corresponding outputs, making it useful for academic demonstration, practical submission, and SQL practice. fileciteturn1file0L97-L119
+The SQL file contains working examples and their corresponding outputs, making it useful for academic demonstration, practical submission, and SQL practice.
 
 ---
 
